@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xhr.mapper.CodingMapper">
+
+    <resultMap id="BaseResultMap" type="com.xhr.model.entity.Coding">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="skillName" column="skillName" jdbcType="VARCHAR"/>
+            <result property="skillLevel" column="skillLevel" jdbcType="VARCHAR"/>
+            <result property="skillDescribe" column="skillDescribe" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,skillName,skillLevel,
+        skillDescribe,createTime,updateTime,
+        isDelete
+    </sql>
+</mapper>

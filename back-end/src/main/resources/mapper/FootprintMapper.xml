@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xhr.mapper.FootprintMapper">
+
+    <resultMap id="BaseResultMap" type="com.xhr.model.entity.Footprint">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="place" column="place" jdbcType="VARCHAR"/>
+            <result property="happenTime" column="happenTime" jdbcType="VARCHAR"/>
+            <result property="eid" column="eid" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,place,happenTime,
+        eid,createTime,updateTime,
+        isDelete
+    </sql>
+</mapper>
